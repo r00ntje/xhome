@@ -11,6 +11,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'embark-theme/vim', {'as': 'embark', 'branch': 'main'}
 Plug 'sickill/vim-monokai', {'as': 'monokai', 'branch': 'master'}
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
+Plug 'noah/vim256-color'
 
 "code completetion
 
@@ -18,6 +19,13 @@ Plug 'jeffkreeftmeijer/vim-numbertoggle'
 call plug#end()
 
 syntax on
-colorscheme monokai
+colorscheme gruvbox
+set background=dark
 set number
 set relativenumber
+
+" Automatically handle indentation
+set expandtab
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
